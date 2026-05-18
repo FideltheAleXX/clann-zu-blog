@@ -29,3 +29,13 @@
 .nav-link {
   text-decoration: none;
 }
+
+/* About Page */
+.albums {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.album-cover {
+  width: 400px;
+}
