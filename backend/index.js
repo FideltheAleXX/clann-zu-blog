@@ -1,8 +1,14 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
-import { postRouter } from './src/routes/routes';
+import cors from 'cors';
+import { postRouter } from './src/routes/routes.js';
+import './src/config/db.js';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clann Zu fan-site</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Posts from Database</h1>
+
+    <section
+      style="
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        max-width: 500px;
+      "
+    >
+      <h2>Create new post</h2>
+      <form id="add-post-form">
+        <div style="margin-bottom: 10px">
+          <label for="post-title">Title:</label><br />
+          <input type="text" id="post-title" required style="width: 100%" />
+        </div>
+        <div style="margin-bottom: 10px">
+          <label for="post-author">Author:</label><br />
+          <input type="text" id="post-author" required style="width: 100%" />
+        </div>
+        <div style="margin-bottom: 10px">
+          <label for="post-img">Link to image (not required):</label><br />
+          <input type="url" id="post-img" style="width: 100%" />
+        </div>
+        <div style="margin-bottom: 10px">
+          <label for="post-content">Content:</label><br />
+          <textarea
+            id="post-content"
+            required
+            rows="5"
+            style="width: 100%"
+          ></textarea>
+        </div>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+
+    <div id="posts-container">Loading...</div>
+
+    <script src="./posts.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+//ALBUMS-page
+
 const albums = [
   {
     title: 'Clann Zú',
