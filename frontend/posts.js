@@ -36,3 +36,46 @@ async function loadPosts() {
 }
 
 document.addEventListener('DOMContentLoaded', loadPosts);
+
+//CREATE POST
+async function createPost(e) {
+  e.preventDefault();
+
+  const title = document.getElementById('post-title').value;
+  const author = document.getElementById('post-author').value;
+  const img = document.getElementById('post-img').value;
+  const content = document.getElementById('post-content').value;
+
+  const newPostData = { title, author, content, img };
+
+  try {
+    const response = await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newPostData),
+    });
+
+    if (response.ok) {
+      alert('Post published successfully!');
+
+      document.getElementById('add-post-form').reset();
+
+      loadPosts();
+    } else {
+      const errorData = await response.json();
+      alert(`Error: ${errorData.message}`);
+    }
+  } catch (error) {
+    console.error('Error when creating post:', error);
+    alert('Error connection to server.');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadPosts();
+
+  const form = document.getElementById('add-post-form');
+  form.addEventListener('submit', createPost);
+});

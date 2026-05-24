@@ -24,7 +24,7 @@ export const postController = {
       res.status(500).json({ message: 'Server Error' });
     }
   },
-  postOnePost: async (req, res) => {
+  createOnePost: async (req, res) => {
     try {
       const { title, content, author, img } = req.body;
 

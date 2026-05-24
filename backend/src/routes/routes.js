@@ -1,5 +1,6 @@
 import express from 'express';
 import { postController } from '../controllers/post.controller.js';
+import { checkAuth } from '../middleware/checkAuth.js';
 
 export const postRouter = express.Router();
 
@@ -7,7 +8,7 @@ export const postRouter = express.Router();
 postRouter.get('/', postController.getAllPosts);
 
 // 2. POST
-postRouter.post('/', postController.postOnePost);
+postRouter.post('/', checkAuth, postController.createOnePost);
 
 // 3. GET one post
 postRouter.get('/:id', postController.getOnePost);

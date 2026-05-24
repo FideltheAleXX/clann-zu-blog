@@ -4,6 +4,7 @@ dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import { postRouter } from './src/routes/routes.js';
+import { authRouter } from './src/routes/authRoutes.js';
 import './src/config/db.js';
 
 const app = express();
@@ -16,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/posts', postRouter);
+app.use('/auth', authRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is ready on http://localhost:${PORT}`);
