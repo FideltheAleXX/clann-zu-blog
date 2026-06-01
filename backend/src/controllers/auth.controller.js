@@ -14,7 +14,6 @@ export const authController = {
 
       email = email.toLowerCase().trim();
 
-      // Если никнейм не введен, используем email в качестве никнейма
       if (!nickname || nickname.trim() === '') {
         nickname = email;
       } else {
@@ -37,7 +36,7 @@ export const authController = {
         if (isEmailTaken) {
           return res
             .status(400)
-            .json({ message: 'User with same password already exists' });
+            .json({ message: 'User with same email already exists' });
         }
         if (isNicknameTaken) {
           return res.status(400).json({ message: 'Nickname already exists' });
@@ -64,15 +63,44 @@ export const authController = {
   },
   login: async (req, res) => {
     try {
-      const { id } = req.params;
-      const post = await postModel.getById(id);
-      if (!post) {
-        return res.status(404).json({ message: 'Post not found' });
+      let { loginIdentifier, password } = req.body;
+
+      if (!loginIdentifier || !password) {
+        return res.status(400).json({ message: 'All fields are required' });
       }
-      res.json(post);
-    } catch (err) {
-      console.error(err.message);
-      res.status(500).json({ message: 'Server Error' });
+      email = email.toLowerCase().trim();
+
+      const user = await userModel.getUserByEmailOrNickname(loginIdentifier);
+
+      if (!user) {
+        return res.status(401).json({ message: 'Invalid credentials' });
+      }
+
+      const isPasswordCorrect = await bcrypt.compare(
+        password,
+        user.passwordHash,
+      );
+
+      if (!isPasswordCorrect) {
+        return res.status(401).json({ message: 'Invalid email or password' });
+      }
+
+      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
+        expiresIn: '24h',
+      });
+
+      return res.status(200).json({
+        message: 'Logged in successfully',
+        token,
+        user: {
+          id: user.id,
+          email: user.email,
+          nickname: user.nickname,
+        },
+      });
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({ message: 'Internal server error' });
     }
   },
 };

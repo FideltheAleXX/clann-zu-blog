@@ -23,4 +23,14 @@ export const userModel = {
     ]);
     return result.rows[0];
   },
+  getUserByEmailOrNickname: async (loginIdentifier) => {
+    const normalizedIdentifier = loginIdentifier.toLowerCase().trim();
+
+    const query = `
+    SELECT * FROM users 
+    WHERE LOWER(email) = $1 OR LOWER(nickname) = $1
+  `;
+    const result = await pool.query(query, [normalizedIdentifier]);
+    return result.rows[0];
+  },
 };
