@@ -42,17 +42,24 @@ async function createPost(e) {
   e.preventDefault();
 
   const title = document.getElementById('post-title').value;
-  const author = document.getElementById('post-author').value;
   const img = document.getElementById('post-img').value;
   const content = document.getElementById('post-content').value;
 
-  const newPostData = { title, author, content, img };
+  const token = localStorage.getItem('token');
+
+  if (!token) {
+    alert('Please, log in.');
+    return;
+  }
+
+  const newPostData = { title, content, img };
 
   try {
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(newPostData),
     });

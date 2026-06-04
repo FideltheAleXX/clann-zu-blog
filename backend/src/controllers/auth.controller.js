@@ -1,5 +1,6 @@
 import bcrypt from 'bcrypt';
 import { userModel } from '../models/user.model.js';
+import jwt from 'jsonwebtoken';
 
 export const authController = {
   registration: async (req, res) => {
@@ -68,7 +69,7 @@ export const authController = {
       if (!loginIdentifier || !password) {
         return res.status(400).json({ message: 'All fields are required' });
       }
-      email = email.toLowerCase().trim();
+      loginIdentifier = loginIdentifier.toLowerCase().trim();
 
       const user = await userModel.getUserByEmailOrNickname(loginIdentifier);
 
@@ -78,7 +79,7 @@ export const authController = {
 
       const isPasswordCorrect = await bcrypt.compare(
         password,
-        user.passwordHash,
+        user.password_hash,
       );
 
       if (!isPasswordCorrect) {
@@ -86,7 +87,7 @@ export const authController = {
       }
 
       const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
-        expiresIn: '24h',
+        expiresIn: '7d',
       });
 
       return res.status(200).json({

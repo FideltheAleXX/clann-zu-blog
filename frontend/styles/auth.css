@@ -2,7 +2,48 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero-auth {
+  display: flex;
+  gap: 0.75rem;
   font-size: 1rem;
+}
+
+.hero-btn {
+  padding: 0.5rem;
+  background-color: #00aaaa;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 .auth-container {
@@ -45,4 +86,31 @@
   border: none;
   color: #fff;
   background-color: blue;
+}
+
+/* Переключатель форм */
+.auth-container {
+  display: none;
+}
+
+.auth-container.active {
+  display: flex;
+}
+
+.hero-btn.toggle-btn {
+  transition: 0.3s ease;
+}
+
+.hero-btn.toggle-btn.active {
+  background-color: #00aaaa;
+  box-shadow: 0 0 8px rgba(0, 170, 170, 0.8);
+}
+
+.hero-btn.toggle-btn:not(.active) {
+  background-color: #005555;
+  opacity: 0.7;
+}
+
+.hero-btn.toggle-btn:hover {
+  opacity: 1;
 }

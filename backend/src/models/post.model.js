@@ -2,11 +2,21 @@ import { pool } from '../config/db.js';
 
 export const postModel = {
   getAll: async () => {
-    const result = await pool.query('SELECT * FROM posts ORDER BY id DESC');
+    const result = await pool.query(`
+      SELECT p.*, u.nickname as author 
+      FROM posts p
+      LEFT JOIN users u ON p.author = u.id::varchar
+      ORDER BY p.id DESC
+    `);
     return result.rows;
   },
   getById: async (id) => {
-    const query = 'SELECT * FROM posts WHERE id = $1';
+    const query = `
+      SELECT p.*, u.nickname as author 
+      FROM posts p
+      LEFT JOIN users u ON p.author = u.id::varchar
+      WHERE p.id = $1
+    `;
     const { rows } = await pool.query(query, [id]);
     return rows[0];
   },

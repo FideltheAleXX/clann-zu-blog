@@ -26,12 +26,14 @@ export const postController = {
   },
   createOnePost: async (req, res) => {
     try {
-      const { title, content, author, img } = req.body;
+      const { title, content, img } = req.body;
 
-      if (!title || !content || !author) {
+      const author = req.user.id;
+
+      if (!title || !content) {
         return res
           .status(400)
-          .json({ message: 'Title, content and author are required fields' });
+          .json({ message: 'Title and content are required fields' });
       }
 
       const newPost = await postModel.createPost({

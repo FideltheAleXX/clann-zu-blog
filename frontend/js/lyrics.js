@@ -33,7 +33,11 @@ Is this salt from the sea?
 Is this salt from the sea
 Or is this salt from my eyes?`,
       },
-      { id: '02', track: 'An Bád Dubh', duration: '3:56', lyrics: `In their boats you watch them rise
+      {
+        id: '02',
+        track: 'An Bád Dubh',
+        duration: '3:56',
+        lyrics: `In their boats you watch them rise
 Over waves and crests of white
 I'm closer to you now
 
@@ -45,8 +49,13 @@ I'm closer to you now
 In the morning you're standing there
 Above the waves in half-time air
 I'm closer to you now
-I'm closer to you now`},
-      { id: '03', track: 'Absence Makes The Heart Die', duration: '8:07', lyrics: `One more day becomes a minute,
+I'm closer to you now`,
+      },
+      {
+        id: '03',
+        track: 'Absence Makes The Heart Die',
+        duration: '8:07',
+        lyrics: `One more day becomes a minute,
 it's gone forever just admit it.
 
 Sucking long and hard on nothing,
@@ -88,8 +97,13 @@ Tá mé ag dul as ó dubh go dubh mar níl me abablta áthas a chuir ar aon duin
 Tá an poll seo i mo bhrollach ag dul i ndonas.
 (This hole in my chest is getting worse)
 
-Tá an ceart agat, b'fhearr duit fanacht uaimse.`},
-      { id: '04', track: 'Hi Fat Lo Fat', duration: '4:01', lyrics: `We'll suck the last drop dry
+Tá an ceart agat, b'fhearr duit fanacht uaimse.`,
+      },
+      {
+        id: '04',
+        track: 'Hi Fat Lo Fat',
+        duration: '4:01',
+        lyrics: `We'll suck the last drop dry
 Watch as you fall and cry
 Our whole reason's set to bring you down
 Don't bother asking why
@@ -129,11 +143,13 @@ Inside your gut the worm has finally turned
 So low
 So low
 So low
-So low`},
+So low`,
+      },
       {
         id: '05',
         track: 'The Sailor Who Fell From Grace With The Sea',
-        duration: '2:55', lyrics: `Spoken words:
+        duration: '2:55',
+        lyrics: `Spoken words:
 
 Police have been criticised over their tough handling of protests outside the World Economic Forum in Melbourne. Officers baton-charged the crowds, injuring up to 50 people, after being accused of taking too soft an approach at demonstrations yesterday…
 
@@ -146,7 +162,11 @@ There, ah … richest people in the world. There are less than two thousand peop
     year: '(2002)',
     img: './images/rua.jpg',
     tracklist: [
-      { id: '01', track: 'Words For Snow', duration: '4:37', lyrics: `So many call here
+      {
+        id: '01',
+        track: 'Words For Snow',
+        duration: '4:37',
+        lyrics: `So many call here
 On their way down below
 And I'll be here burning
 Till the end of time
@@ -179,8 +199,13 @@ For Christ's sake get me out of here!
 God of all sick things get me the fuck out of here!
 Get me the fuck out of here!
 Get me the fuck out of here!
-Release me!` },
-      { id: '02', track: 'Five Thousand More', duration: '4:14', lyrics: `No one knows our names
+Release me!`,
+      },
+      {
+        id: '02',
+        track: 'Five Thousand More',
+        duration: '4:14',
+        lyrics: `No one knows our names
 Lying here in these graves unmarked, with no name
 
 Found you lying down by the roadside, half ways melted into the ground
@@ -195,8 +220,13 @@ I still hear you calling out today
 I walk past your grave each night and each morning I still hear the voices of eight million starving
 I still hear you calling out today
 Descended from a line of famine survivors, millions escaped but how many died though
-I still hear you calling out today`},
-      { id: '03', track: 'Hope This Day', duration: '3:17', lyrics: `Mo leannán [my darling], this soul isnd't all right
+I still hear you calling out today`,
+      },
+      {
+        id: '03',
+        track: 'Hope This Day',
+        duration: '3:17',
+        lyrics: `Mo leannán [my darling], this soul isnd't all right
 And these ones theyd'll watch you mourning
 And this place isnd't all right
 And these ones theyd'll watch you drowning
@@ -221,8 +251,13 @@ Need you
 On
 On we'll go
 Onwards we'll go
-On we go`},
-      { id: '04', track: "All That You've Ever Known", duration: '5:34', lyrics: `Fall away from the ground
+On we go`,
+      },
+      {
+        id: '04',
+        track: "All That You've Ever Known",
+        duration: '5:34',
+        lyrics: `Fall away from the ground
 From the land you have known
 All of your days, a new world haze
 As the tears fall and land
@@ -261,8 +296,13 @@ They don't want you to breathe now;
 They don't want you speaking your tongue
 They don't want you to live now;
 They don't want you to breathe now;
-They want to keep your culture down`},
-      { id: '05', track: 'Everyday', duration: '4:05', lyrics: `I walk for hours amongst the crowds and watch their silent passing;
+They want to keep your culture down`,
+      },
+      {
+        id: '05',
+        track: 'Everyday',
+        duration: '4:05',
+        lyrics: `I walk for hours amongst the crowds and watch their silent passing;
 I picked your photos up today
 I talked for hours amongst the dead and searched the half-life places
 But you're still not here with me
@@ -294,8 +334,13 @@ I miss you more with every day
 Hey
 I loved you more than I could ever breathe
 Hey
-I miss you more with every day`},
-      { id: '06', track: 'All The People Now', duration: '6:31', lyrics: `What makes a man fight for his rights?
+I miss you more with every day`,
+      },
+      {
+        id: '06',
+        track: 'All The People Now',
+        duration: '6:31',
+        lyrics: `What makes a man fight for his rights?
 Here they come to try and take away his life
 For each one that fall another will rise
 With truth in their heart and fire in their eyes
@@ -329,8 +374,13 @@ All the people rising up
 We can't be beat, we can't be beat, no way
 We can't be beat, we can't be beat, no way now
 We can't be beat, we can't be beat, no way
-We can't be beat, we can't be beat, no way now`},
-      { id: '07', track: 'Rí Rá', duration: '3:22', lyrics: `No compromising
+We can't be beat, we can't be beat, no way now`,
+      },
+      {
+        id: '07',
+        track: 'Rí Rá',
+        duration: '3:22',
+        lyrics: `No compromising
 With your life, there is only one
 Who writes the ending
 And the script to the rí rá
@@ -359,8 +409,13 @@ Watch us thrive on the rí rá
 
 There is no way you'll keep us down 'cause we thrive on the rí rá
 
-(Rí rá = uproar)`},
-      { id: '08', track: 'Lights Below', duration: '6:12', lyrics: `(Inaudible whispers)
+(Rí rá = uproar)`,
+      },
+      {
+        id: '08',
+        track: 'Lights Below',
+        duration: '6:12',
+        lyrics: `(Inaudible whispers)
 
 (Let's get out of here now
 Let's get out of here now
@@ -403,8 +458,13 @@ We'll rise into the sky
 No matter what they try
 We'll soar above their fires below
 
-Suddenly we'll escape`},
-      { id: '09', track: 'Crashing To The Floor', duration: '2:44', lyrics: `Opens his hand, reads his name, grabs the bottle, and swallows again
+Suddenly we'll escape`,
+      },
+      {
+        id: '09',
+        track: 'Crashing To The Floor',
+        duration: '2:44',
+        lyrics: `Opens his hand, reads his name, grabs the bottle, and swallows again
 Thinks of the wife he's left behind, touches the photo and closes his eyes
 Thinks of the time where he walked from the street under the light and killed a man dead
 
@@ -425,11 +485,13 @@ Stad do bhualadh, tá mé gan dóchas [stop your beating, I am without hope]
 Whiskey-burned memories come crashing to the floor
 For each one that's gone there's twenty-five more
 That'll burn him and crush him right through to the core
-He's filled with the thoughts of those gone before`},
+He's filled with the thoughts of those gone before`,
+      },
       {
         id: '10',
         track: "You're Listening To A Dead Man Speak",
-        duration: '6:53', lyrics: `They say true understanding
+        duration: '6:53',
+        lyrics: `They say true understanding
 Only comes when you're alone
 Well, here you'll find me standing
 Lacerated to the bone
@@ -499,16 +561,227 @@ You're listening to a dead man speak`,
     year: '(2004)',
     img: './images/black-coats-and-bandages.jpg',
     tracklist: [
-      { id: '01', track: 'Black Coats And Bandages', duration: '4:37', lyrics: },
-      { id: '02', track: 'There Will Be No Morning Copy', duration: '4:14', lyrics: },
-      { id: '03', track: 'So Complicated Was The Fall', duration: '3:17', lyrics: },
-      { id: '04', track: 'An T-éan Bán', duration: '5:34', lyrics: },
-      { id: '05', track: 'One Bedroom Apartment', duration: '4:05', lyrics: },
-      { id: '06', track: 'From An Unholy Height', duration: '6:31', lyrics: },
-      { id: '07', track: 'Án Deireadh Scéal', duration: '3:22', lyrics: },
-      { id: '08', track: 'From Bethlehem To Jenin', duration: '6:12', lyrics: },
-      { id: '09', track: "You'll Have To Swim", duration: '2:44', lyrics: },
-      { id: '10', track: 'A Sudden Intake Of Breath', duration: '6:53', lyrics: },
+      {
+        id: '01',
+        track: 'Black Coats And Bandages',
+        duration: '4:37',
+        lyrics: `Umbrellas and crows fill the grey
+Pock marked procession thru the sleet as the howl of a lonely bell misbehaves In the drunken silence
+Polished black shoes singing on gravel
+Albino leaves sweep thru the air falling in half time so as not to interrupt the silent shuffle. Black coats and bandages fall out of an eviscerated sky
+Processions of emptiness run for the turning of the tide. To sail in their coffin ships where all good things must die.Underneath a bitter sun hanging in a wounded sky`,
+      },
+      {
+        id: '02',
+        track: 'There Will Be No Morning Copy',
+        duration: '4:14',
+        lyrics: `Your borders are bloody mirages
+That expand and contract at the will of the blade
+Drawn across the back of a people in shadow
+
+We are on the ropes
+Tasting the blood in our mouths
+Mixing with what little hope we have left
+As it slides down our throats
+Constricted by hands of avarice, soft media, oxymorons and military might
+
+How long must we live in the shadow of your wall
+That divides our lives, our loves and our hopes?
+How long must we live in the daily fear
+Of returning home to find it gone?
+
+We are refugees in our own land
+Waiting in hope for the day
+When we can walk our own streets
+
+Just because you have the biggest gun
+Doesn't mean your war is won
+Just because you take our homes
+Doesn't mean our hope is gone
+Just because you claim your cause as just
+Doesn't mean that you're still not wrong
+Just because you build a wall
+Doesn't mean it will last that long
+
+A bullet flies through the head of another ten-year-old boy
+Who held a rock in his hand against a thirty-ton tank in his people's land`,
+      },
+      {
+        id: '03',
+        track: 'So Complicated Was The Fall',
+        duration: '3:17',
+        lyrics: `Who would have thought that I'd lay here caught on the burning line
+Higher still, I tumble down
+Taste your breath while falling from your paradise
+Betrayer wrapped in truths disguise
+Thoughts of strength and painted scenes of perfect lives all of them come crumbling down
+With each breath there comes the taste of another one
+You built me up to tear me down
+I believed in you
+You let me down so hard
+So complicated was the fall, falling from your heart, I never saw it come at all
+And now I'm stranded in this place, stranded all alone, even though it is my home`,
+      },
+      {
+        id: '04',
+        track: 'An T-éan Bán',
+        duration: '5:34',
+        lyrics: `An t-éan bán ag eitilt gan stró as do bhéal. Agus mise I mo sheasamh faoi do sholas géar. Na síoda ag titim barr do theanga. Níl mé abalalta na focail ceart a rá leat
+Ba mhaith liom na sléibhte is airde a dhreapadh agus na focail a bhéicil amach os cionn na scamaill is airde
+Nior fagadh na focail agam. Grá mór, grá fior, grá an domhain, is é an grá is laidir. Tá mé I ngrá leat
+[The white bird flies with ease from your mouth. And me standing there under your sharp light
+The silk falling from your tongue. I'm not able to say the right words to you. I want to climb the highest mountains and scream the words out over the highest clouds. The words don't leave me. A huge love, a fierce love, the love of the world, this is the strongest love. I'm in love with you.]`,
+      },
+      {
+        id: '05',
+        track: 'One Bedroom Apartment',
+        duration: '4:05',
+        lyrics: `Don't leave me
+I'm bleeding
+All over this linoleum floor
+
+I'm still in disbelief
+I'm drowning
+Between the clear and blackening
+
+From morning until night
+I'm losing sight
+Of all the beautiful things
+
+There's nothing here for me
+Without you
+Right here beside me, why'd you go and go?
+
+Why'd you go and leave me here
+To rot inside this empty place?
+I know that you are going far away
+
+From morning until night
+I'm losing sight
+Of all the beautiful things
+
+A man sits naked in the middle of the room of a one bedroom apartment in New York City
+And no one knows he's there and no one's left to care whether or not the next drop comes out
+And the blood would be warm and the blood would hug him just like she used to
+Before she left him in this fucking mess where only one sentence repeats itself and this is it:
+It says, "I will never love again, and I will never love again"
+
+And on the fifth day he placed everything he owned in the centre of the room and he watched it burn
+As he recited all of the beautiful words that had ever come out of her mouth
+And these are the same words that mock him now and tell him that she's not coming back
+That he is nothing, not worth a fuck, and only one sentence repeats itself:
+Says, "I will never love again, and I will never love again
+And I will never love again and I will never love again"
+
+And for the first time in 25 years he cried rivers of black shitty oil that careered down his chest
+As the dam to his past broke, exploding, and it's sinking all of his future now
+And that was then and this is now as the animals reach their fever pitch
+And the windows implode in silence out of respect for the dying, out of respect for the dead
+Says, "I will never love again and I will never love again
+And I will never love again and I will never love again"
+
+And before he can say stop he's running down the street to the beat of his feet and past all the faces
+Past all the places he's ever known, past all the traces he's left of himself
+And into the sky and into the air, past all the stars as he's screaming out, "Why?"
+Over the ocean in search of the only love that he will ever have
+Says, "I will never love again, and I will never love again
+And I will never love again and I will never love again"`,
+      },
+      {
+        id: '06',
+        track: 'From An Unholy Height',
+        duration: '6:31',
+        lyrics: `Dark and cold fill you with the ashes of all those you've burned
+Let loose the maggots to feed on th sickness that you installed
+To feed on your flesh, the only way you'll be absolved
+By a process of degradation. We'll laugh while you slowly dissolve
+The red robes of rome reigned over us all
+Cloaked us in fear of the unseen and unknown
+The echoes of empty ones fell upon a thousand deaf ears and the bruises and broken limbs fell upon the eyes of blind dogs
+They were buried unnamed, unquestioned and unheard
+A cross in one hand and a cock in the other
+The state sat on your lap while you barked out the orders through smiling pursed lips hiding the teeth of the sickest of all
+A shut mouth is a guilty mouth as guilty as the rest, as guilty as the rapist, the murderer the state and the fist
+So empty your pockets of all your fucking god's gold
+And empty your pockets of all the souls you stole
+And so I piss on your grave from the greatest of unholy heights
+Each drop on the soil is the acid to wash you away
+Your strength and your dictates are starting to crumble and fade as the worms of all truth feel free to eat you away
+And so we piss on your grave from the greatest of unholy heights`,
+      },
+      {
+        id: '07',
+        track: 'Án Deireadh Scéal',
+        duration: '3:22',
+        lyrics: `Táimíd caílte. Cá bhfuil ár ndochas? D'imigh sé uainn
+Cá bfhuil an misnéar? Tá sé ag teacht lena laimh trí thine ag glaoch orainn. Seo é ár grioch. Tá ísle brí ar an domhain. An domhain ceathrá. Is amadáin a bhí ionann
+Ag diál ar gcioch an striapaigh nimhiáil. Ag eisteacht leis na guthanna sólásacha agus iad ag stróiceadh ár ngéaga dáinn go mall
+Eist le binneas ceol na mairbh. Seo é an deireadh scéal an domhain
+[We are lost. Where is our hope? It's left us. Where is the missionary? Here he comes with his hand on fire summoning us. The world is depressed. The fourth world. We were the fools sucking on the tit of a poisoned whore. Listening to the soothing voices while they slowly cut off our limbs. Listen to the harmonies of the dead. This is the last story of the world.]`,
+      },
+      {
+        id: '08',
+        track: 'From Bethlehem To Jenin',
+        duration: '6:12',
+        lyrics: `Like a swan who's lover has been shot in the chest and is lying down broken and lifeless, speaking the last words of a life decayed
+Counting down numbers of a life betrayed
+And all of the people are gathered around to listen to the beautiful sounds coming out of the bodies swinging in the coolest breeze
+Nodding in time to the sweet serenade
+Send in your bulldozers to knock the buildings down
+Drop your smartest bombs from the highest clouds
+From Bethlehem to Jenin this sound is so obscene
+From New York to Dublin they're swinging in the wind
+There is no blessed saviour there is no blessed sin there is only the sounds of bodies as they are swinging in the wind
+The smell of 3 day death down each deserted street as the dogs pick their way between the bodies in defeat
+They're swingin`,
+      },
+      {
+        id: '09',
+        track: "You'll Have To Swim",
+        duration: '2:44',
+        lyrics: `Early one morning as I went walking down by the filthy canal
+One hundred skull angels came crashing around me, their wings all set to flames
+Crying out for sanctuary from all that they had seen
+I said: How can I help you myself, I've been burning here for 35 years?
+
+Walk on, soul's gone, sailing seas of heartache
+Float on, boat's gone, you'll have to swim all the way
+
+And so I live a lonely life
+There is no one by my side
+There is nothing left down here for me
+
+And I would never change a single fucking thing
+Despite the fact I know the brutal vicious end
+I still would have kissed you that day
+
+I'll watch you burn
+
+And so I keep walking down by the canal that never ends
+Too many people are still breathing and I'm a coward for not ending them
+
+Walk on, soul's gone, sailing seas of heartache
+Float on, boat's gone, you'll have to swim all the way`,
+      },
+      {
+        id: '10',
+        track: 'A Sudden Intake Of Breath',
+        duration: '6:53',
+        lyrics: `And the heavens opened and it lashed down
+Rivers of filth, syringes and broken hearts littered the gutters of the central business district
+Bodies lined the roads immobile waiting for the flood, saying nothing at all just watching and waiting, breathing and touching no one
+Not a word said, not a hand held, not an eye met, ears pinned for the rumble of the brilliant white truth that they had all been waiting for
+The switches flicked and everyone turned off
+This is mine this is mine im going home
+I am fine I am fine I am going home
+There is no hope
+Hope is a dirty word that'll stab you in the back when you offer up your throat
+Goodbye to you, you mean nothing
+You mean nothing to me now
+You're a sheet of paper with a word written on it blowing in the wind
+And soon you'll land and rot by the side of the road and the word will sigh and the word will fade and be gone
+And I won't remember who you are`,
+      },
     ],
   },
 ];

@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <div class="hero">
+      <div class="hero-logo">
+        <a href="index.html"
+          ><img src="./images/claa-zu-logo.png" alt="clann zu"
+        /></a>
+      </div>
+      <div class="hero-title">Clann Zú fan-site</div>
+
+      <div class="hero-auth">
+        <div>
+          <a href="./auth.html"><button class="hero-btn">Sign In</button></a>
+        </div>
+        <div>
+          <a href="./auth.html"><button class="hero-btn">Sign Up</button></a>
+        </div>
+      </div>
+    </div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./albums.html">Albums</a>
@@ -39,10 +56,7 @@
           <label for="post-title">Title:</label><br />
           <input type="text" id="post-title" required style="width: 100%" />
         </div>
-        <div style="margin-bottom: 10px">
-          <label for="post-author">Author:</label><br />
-          <input type="text" id="post-author" required style="width: 100%" />
-        </div>
+
         <div style="margin-bottom: 10px">
           <label for="post-img">Link to image (not required):</label><br />
           <input type="url" id="post-img" style="width: 100%" />
@@ -62,6 +76,7 @@
 
     <div id="posts-container">Loading...</div>
 
-    <script src="./posts.js"></script>
+    <script src="./js/posts.js"></script>
+    <script src="./js/navbar.js"></script>
   </body>
 </html>
