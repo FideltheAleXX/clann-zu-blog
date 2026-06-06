@@ -17,10 +17,10 @@ function updateNavbar() {
   } else {
     heroAuth.innerHTML = `
       <div>
-        <a href="./auth.html"><button class="hero-btn">Sign In</button></a>
+        <a href="./auth.html#login"><button class="hero-btn">Sign In</button></a>
       </div>
       <div>
-        <a href="./auth.html"><button class="hero-btn">Sign Up</button></a>
+        <a href="./auth.html#register"><button class="hero-btn">Sign Up</button></a>
       </div>
     `;
   }

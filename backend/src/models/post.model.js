@@ -4,9 +4,9 @@ export const postModel = {
   getAll: async () => {
     const result = await pool.query(`
       SELECT p.*, u.nickname as author 
-      FROM posts p
-      LEFT JOIN users u ON p.author = u.id::varchar
-      ORDER BY p.id DESC
+FROM posts p
+LEFT JOIN users u ON p.user_id = u.id
+ORDER BY p.id DESC;
     `);
     return result.rows;
   },
@@ -14,7 +14,7 @@ export const postModel = {
     const query = `
       SELECT p.*, u.nickname as author 
       FROM posts p
-      LEFT JOIN users u ON p.author = u.id::varchar
+      LEFT JOIN users u ON p.author = u.id
       WHERE p.id = $1
     `;
     const { rows } = await pool.query(query, [id]);

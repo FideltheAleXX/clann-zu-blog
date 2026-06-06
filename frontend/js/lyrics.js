@@ -90,10 +90,8 @@ Tá an ceart agat, b'fhearr duit fanacht uaimse.
 
 Tá me i mo shuí ar an talamh agus tá mo guth ag dul i léig.
 (I'm sitting on the ground and my voice is weakening)
-
 Tá mé ag dul as ó dubh go dubh mar níl me abablta áthas a chuir ar aon duine.
 (I'm fading from dusk till dusk because I can't make anyone happy)
-
 Tá an poll seo i mo bhrollach ag dul i ndonas.
 (This hole in my chest is getting worse)
 
@@ -516,13 +514,7 @@ I hear me say, "I should have known
 I've seen this happen all before"
 I'm breathing in this vacant hole
 Where no one comes and no one knows
-You might also like
-Crashing to the Floor
-Clann Zú
-One Bedroom Apartment
-Clann Zú
-the cure
-Olivia Rodrigo
+
 I should have seen the weeping walls
 And closed my ears to desperate thoughts
 And now I'm breathing in this hole
@@ -539,20 +531,11 @@ A single touch to make me weak
 You're listening to a dead man speak
 
 I never learned from my mistakes
-You're listening to a dead man speak
-I never learned from my mistakes
-You're listening to a dead man speak
+You're listening to a dead man speak X2
 
 (I should have fuckin' known)
 
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak
-You're listening to a dead man speak`,
+You're listening to a dead man speak X8`,
       },
     ],
   },
@@ -566,10 +549,15 @@ You're listening to a dead man speak`,
         track: 'Black Coats And Bandages',
         duration: '4:37',
         lyrics: `Umbrellas and crows fill the grey
-Pock marked procession thru the sleet as the howl of a lonely bell misbehaves In the drunken silence
+Pock marked procession thru the sleet as the howl of a lonely
+bell misbehaves In the drunken silence
 Polished black shoes singing on gravel
-Albino leaves sweep thru the air falling in half time so as not to interrupt the silent shuffle. Black coats and bandages fall out of an eviscerated sky
-Processions of emptiness run for the turning of the tide. To sail in their coffin ships where all good things must die.Underneath a bitter sun hanging in a wounded sky`,
+Albino leaves sweep thru the air falling in half time so as not to
+interrupt the silent shuffle.
+Black coats and bandages fall out of an eviscerated sky
+Processions of emptiness run for the turning of the tide.
+To sail in their coffin ships where all good things must die.
+Underneath a bitter sun hanging in a wounded sky`,
       },
       {
         id: '02',
@@ -626,11 +614,22 @@ And now I'm stranded in this place, stranded all alone, even though it is my hom
         id: '04',
         track: 'An T-éan Bán',
         duration: '5:34',
-        lyrics: `An t-éan bán ag eitilt gan stró as do bhéal. Agus mise I mo sheasamh faoi do sholas géar. Na síoda ag titim barr do theanga. Níl mé abalalta na focail ceart a rá leat
-Ba mhaith liom na sléibhte is airde a dhreapadh agus na focail a bhéicil amach os cionn na scamaill is airde
-Nior fagadh na focail agam. Grá mór, grá fior, grá an domhain, is é an grá is laidir. Tá mé I ngrá leat
-[The white bird flies with ease from your mouth. And me standing there under your sharp light
-The silk falling from your tongue. I'm not able to say the right words to you. I want to climb the highest mountains and scream the words out over the highest clouds. The words don't leave me. A huge love, a fierce love, the love of the world, this is the strongest love. I'm in love with you.]`,
+        lyrics: `An t-éan bán ag eitilt gan stró as do bhéal.
+        Agus mise I mo sheasamh faoi do sholas géar.
+        Na síoda ag titim barr do theanga.
+        Níl mé abalalta na focail ceart a rá leat
+        Ba mhaith liom na sléibhte is airde a dhreapadh agus na focail
+        a bhéicil amach os cionn na scamaill is airde
+Nior fagadh na focail agam. Grá mór, grá fior, grá an domhain,
+is é an grá is laidir. Tá mé I ngrá leat
+
+[The white bird flies with ease from your mouth.
+And me standing there under your sharp light
+The silk falling from your tongue.
+I'm not able to say the right words to you.
+I want to climb the highest mountains and scream the words out over the highest clouds.
+The words don't leave me. A huge love, a fierce love, the love of the world,
+this is the strongest love. I'm in love with you.]`,
       },
       {
         id: '05',
@@ -713,11 +712,24 @@ And so we piss on your grave from the greatest of unholy heights`,
         id: '07',
         track: 'Án Deireadh Scéal',
         duration: '3:22',
-        lyrics: `Táimíd caílte. Cá bhfuil ár ndochas? D'imigh sé uainn
-Cá bfhuil an misnéar? Tá sé ag teacht lena laimh trí thine ag glaoch orainn. Seo é ár grioch. Tá ísle brí ar an domhain. An domhain ceathrá. Is amadáin a bhí ionann
-Ag diál ar gcioch an striapaigh nimhiáil. Ag eisteacht leis na guthanna sólásacha agus iad ag stróiceadh ár ngéaga dáinn go mall
+        lyrics: `Táimíd caílte. Cá bhfuil ár ndochas?
+D'imigh sé uainn. Cá bfhuil an misnéar?
+Tá sé ag teacht lena laimh trí thine ag glaoch orainn.
+
+Seo é ár grioch. Tá ísle brí ar an domhain.
+An domhain ceathrá. Is amadáin a bhí ionann
+Ag diál ar gcioch an striapaigh nimhiáil.
+Ag eisteacht leis na guthanna sólásacha agus iad ag stróiceadh ár ngéaga dáinn go mall
 Eist le binneas ceol na mairbh. Seo é an deireadh scéal an domhain
-[We are lost. Where is our hope? It's left us. Where is the missionary? Here he comes with his hand on fire summoning us. The world is depressed. The fourth world. We were the fools sucking on the tit of a poisoned whore. Listening to the soothing voices while they slowly cut off our limbs. Listen to the harmonies of the dead. This is the last story of the world.]`,
+
+[We are lost. Where is our hope?
+It's left us. Where is the missionary?
+Here he comes with his hand on fire summoning us.
+
+The world is depressed. The fourth world.
+We were the fools sucking on the tit of a poisoned whore.
+Listening to the soothing voices while they slowly cut off our limbs.
+Listen to the harmonies of the dead. This is the last story of the world.]`,
       },
       {
         id: '08',

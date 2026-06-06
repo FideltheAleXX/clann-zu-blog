@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post Form</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/create-post.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-logo">
+        <a href="index.html"
+          ><img src="./images/clann-zu-logo.png" alt="clann zu"
+        /></a>
+      </div>
+      <div class="hero-title">Clann Zú fan-site</div>
+      <div class="hero-auth"></div>
+    </div>
+    <ul class="navbar-nav"></ul>
+    <section class="create-section">
+      <h2>Create new post</h2>
+      <form id="add-post-form">
+        <div class="post-container">
+          <label for="post-title">Title:</label><br />
+          <input type="text" id="post-title" required />
+        </div>
+        <div style="margin-bottom: 10px">
+          <label for="post-img">Link to image (not required):</label><br />
+          <input type="url" id="post-img" />
+        </div>
+        <div class="post-container">
+          <label for="post-content">Content:</label><br />
+          <textarea
+            class="post-area"
+            id="post-content"
+            required
+            rows="5"
+          ></textarea>
+        </div>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/create-post.js"></script>
+    <script type="module" src="./js/navbar.js"></script>
+  </body>
+</html>

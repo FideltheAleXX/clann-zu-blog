@@ -1,84 +1,44 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.hero {
-  display: flex;
-  justify-content: space-around;
-  margin: 1rem;
-  align-items: center;
-}
-
-.hero-title {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.hero-auth {
-  display: flex;
-  gap: 0.75rem;
-  font-size: 1rem;
-}
-
-.hero-btn {
-  padding: 0.5rem;
-  background-color: #00aaaa;
-  color: #fff;
-  border: none;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.navbar-nav {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 16px;
-}
-
-.nav-link {
-  text-decoration: none;
-}
-
-.auth-container {
+#auth-container {
   display: flex;
   flex-direction: column;
   width: 25rem;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
+  margin: 0 auto;
 }
 
 .loggin-form {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 18px;
 }
 
 .email-input,
-.password-input {
-  border-radius: 8px;
-  padding: 0.5rem;
-  margin: 0.75rem;
+.password-input,
+.nickname-input {
+  border-radius: var(--main-br);
+  border: 1px solid blue;
+  font-size: 18px;
+  padding: var(--main-pd);
+  margin: var(--main-mg);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-/* .email-input{
-  margin: 0.75rem;
-} */
 
 .submit-btn {
   border: 1px solid blue;
   background-color: #fff;
-  color: #000;
-  margin: 0.5rem;
-  border-radius: 1rem;
-  padding: 0.5rem;
+  color: blue;
+  margin: var(--secondary-mg);
+  border-radius: var(--main-br);
+  padding: var(--main-pd);
+  font-size: 18px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -88,29 +48,8 @@
   background-color: blue;
 }
 
-/* Переключатель форм */
-.auth-container {
-  display: none;
+.login-form.active {
 }
 
-.auth-container.active {
-  display: flex;
-}
-
-.hero-btn.toggle-btn {
-  transition: 0.3s ease;
-}
-
-.hero-btn.toggle-btn.active {
-  background-color: #00aaaa;
-  box-shadow: 0 0 8px rgba(0, 170, 170, 0.8);
-}
-
-.hero-btn.toggle-btn:not(.active) {
-  background-color: #005555;
-  opacity: 0.7;
-}
-
-.hero-btn.toggle-btn:hover {
-  opacity: 1;
+.register-form.active {
 }

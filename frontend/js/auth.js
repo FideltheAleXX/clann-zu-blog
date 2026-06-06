@@ -1,26 +1,29 @@
 const API_URL = 'http://localhost:3000';
 
-const toggleButtons = document.querySelectorAll('.toggle-btn');
-const loginForm = document.querySelector('.login-form');
-const registerForm = document.querySelector('.register-form');
+function switchAuthMode(mode) {
+  const loginForm = document.querySelector('.login-form');
+  const registerForm = document.querySelector('.register-form');
 
-toggleButtons.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const formType = btn.dataset.form;
-
-    toggleButtons.forEach((b) => b.classList.remove('active'));
-
-    btn.classList.add('active');
-
+  if (mode === 'register') {
+    registerForm.classList.add('active');
     loginForm.classList.remove('active');
+  } else {
+    loginForm.classList.add('active');
     registerForm.classList.remove('active');
+  }
+}
 
-    if (formType === 'login') {
-      loginForm.classList.add('active');
-    } else if (formType === 'register') {
-      registerForm.classList.add('active');
-    }
-  });
+window.addEventListener('DOMContentLoaded', () => {
+  const currentHash = window.location.hash.replace('#', '');
+
+  if (currentHash) {
+    switchAuthMode(currentHash);
+  }
+});
+
+window.addEventListener('hashchange', () => {
+  const currentHash = window.location.hash.replace('#', '');
+  switchAuthMode(currentHash);
 });
 
 //LOGIN

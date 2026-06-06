@@ -1,7 +1,21 @@
+:root {
+  --font-size: 16px;
+  --main-pd: 8px;
+  --main-mg: 16px;
+  --secondary-mg: 8px;
+  --main-br: 0.75rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .container {
@@ -16,7 +30,7 @@ ul {
 .hero {
   display: flex;
   justify-content: space-around;
-  margin: 1rem;
+  margin: var(--main-mg);
   align-items: center;
 }
 
@@ -36,7 +50,7 @@ ul {
   background-color: #00aaaa;
   color: #fff;
   border: none;
-  border-radius: 0.75rem;
+  border-radius: var(--main-br);
   font-weight: 600;
   cursor: pointer;
 }
@@ -56,11 +70,7 @@ ul {
   justify-content: center;
   font-size: 24px;
   font-weight: 700;
-  margin: 16px;
-}
-
-.nav-link {
-  text-decoration: none;
+  margin: var(--main-mg);
 }
 
 /* Albums Page */
@@ -69,8 +79,26 @@ ul {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-title {
+  font-size: 1.75rem;
+}
+
 .album-cover {
-  width: 400px;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: var(--main-br);
+}
+
+.album-tracklist__title {
+  text-align: center;
+  font-size: 18px;
 }
 
 .track-summary {
@@ -96,6 +124,26 @@ details[open] .track-summary .open {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease;
 }
+
+.track-lyrics {
+  white-space: pre-wrap;
+  padding: 16px;
+  font-style: italic;
+  background: #f9f9f9;
+}
+
+details .track-lyrics {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+details[open] .track-lyrics {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Posts Page */
