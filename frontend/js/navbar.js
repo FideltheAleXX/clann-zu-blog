@@ -10,10 +10,19 @@ function updateNavbar() {
         <button class="hero-btn" onclick="window.location.href='./create-post.html'">Write post</button>
       </div>
       <div>
-        <button class="hero-btn logout-btn" onclick="logout()">Log Out</button>
+        <button class="hero-btn logout-btn">Log Out</button>
       </div>
       
     `;
+
+    const logoutBtn = document.querySelector('.logout-btn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        window.location.href = './index.html';
+      });
+    }
   } else {
     heroAuth.innerHTML = `
       <div>
@@ -24,13 +33,6 @@ function updateNavbar() {
       </div>
     `;
   }
-}
-
-function logout() {
-  localStorage.removeItem('token');
-  localStorage.removeItem('user');
-
-  window.location.href = 'index.html';
 }
 
 document.addEventListener('DOMContentLoaded', updateNavbar);

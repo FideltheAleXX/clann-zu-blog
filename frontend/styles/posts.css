@@ -12,18 +12,23 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding: var(--seconary-pd);
 }
 
 .post__img-block {
   max-width: 300px;
   max-height: 300px;
+  height: 300px;
+  width: 300px;
   margin-top: var(--secondary-mg);
+  margin-bottom: var(--secondary-mg);
 }
 
 .post-img {
   height: 100%;
   width: 100%;
   border-radius: var(--main-br);
+  object-fit: cover;
 }
 
 .post-content {

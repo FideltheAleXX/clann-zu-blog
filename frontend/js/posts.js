@@ -24,7 +24,7 @@ export async function loadPosts() {
       postCard.className = 'post-card';
 
       postCard.innerHTML = `
-                <h2>${post.title}</h2>
+                <a href="post.html?id=${post.id}"><h2>${post.title}</h2></a>
                 <small>Author: ${post.author} | Date: ${new Date(post.created_at).toLocaleDateString()}</small><hr><br>
                 ${post.img ? `<div class="post__img-block"><img class="post-img" src="${post.img}" alt="${post.title}"></div>` : ''}
                 <p class="post-content">${post.content}</p>

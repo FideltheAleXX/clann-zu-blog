@@ -14,8 +14,8 @@ ORDER BY p.id DESC;
     const query = `
       SELECT p.*, u.nickname as author 
       FROM posts p
-      LEFT JOIN users u ON p.author = u.id
-      WHERE p.id = $1
+      LEFT JOIN users u ON p.user_id = u.id
+      WHERE p.id = $1;
     `;
     const { rows } = await pool.query(query, [id]);
     return rows[0];

@@ -40,13 +40,14 @@ input {
 
 .create-post__btn {
   text-align: end;
-  border: 1px solid blue;
+  border: 1px solid var(--main-color);
   background-color: #fff;
-  color: blue;
+  color: var(--main-color);
   margin: var(--secondary-mg);
   border-radius: var(--main-br);
   padding: var(--main-pd) 1rem;
   font-size: 18px;
+  font-weight: 500;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -54,5 +55,5 @@ input {
 .create-post__btn:hover {
   border: none;
   color: #fff;
-  background-color: blue;
+  background-color: var(--main-color);
 }

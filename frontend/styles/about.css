@@ -1,0 +1,6 @@
+.about {
+  display: flex;
+  justify-content: center;
+  white-space: pre-wrap;
+  padding: 2rem;
+}
