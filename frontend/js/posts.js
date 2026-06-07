@@ -1,8 +1,12 @@
 // POSTS-page
 const API_URL = 'http://localhost:3000/posts';
 
-async function loadPosts() {
+export async function loadPosts() {
   const container = document.getElementById('posts-container');
+
+  if (!container) {
+    return;
+  }
   try {
     const response = await fetch(API_URL);
 
@@ -21,10 +25,10 @@ async function loadPosts() {
 
       postCard.innerHTML = `
                 <h2>${post.title}</h2>
-                <small>Author: ${post.author} | Date: ${new Date(post.created_at).toLocaleDateString()}</small>
-                ${post.img ? `<br><img src="${post.img}" alt="${post.title}" style="max-width:300px; margin-top:10px;">` : ''}
-                <p>${post.content}</p>
-                <hr>
+                <small>Author: ${post.author} | Date: ${new Date(post.created_at).toLocaleDateString()}</small><hr><br>
+                ${post.img ? `<div class="post__img-block"><img class="post-img" src="${post.img}" alt="${post.title}"></div>` : ''}
+                <p class="post-content">${post.content}</p>
+                
             `;
 
       container.appendChild(postCard);

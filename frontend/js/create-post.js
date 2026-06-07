@@ -1,4 +1,8 @@
+import { loadPosts } from './posts.js';
+
 //CREATE POST
+const API_URL = 'http://localhost:3000/posts';
+
 async function createPost(e) {
   e.preventDefault();
 
@@ -30,7 +34,7 @@ async function createPost(e) {
 
       document.getElementById('add-post-form').reset();
 
-      loadPosts();
+      window.location.href = './posts.html';
     } else {
       const errorData = await response.json();
       alert(`Error: ${errorData.message}`);
@@ -42,8 +46,8 @@ async function createPost(e) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadPosts();
-
   const form = document.getElementById('add-post-form');
-  form.addEventListener('submit', createPost);
+  if (form) {
+    form.addEventListener('submit', createPost);
+  }
 });

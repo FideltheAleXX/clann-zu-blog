@@ -7,7 +7,7 @@ function updateNavbar() {
   if (token && user) {
     heroAuth.innerHTML = `
       <div>
-        <button class="hero-btn" onclick="window.location.href='./posts.html'">Write post</button>
+        <button class="hero-btn" onclick="window.location.href='./create-post.html'">Write post</button>
       </div>
       <div>
         <button class="hero-btn logout-btn" onclick="logout()">Log Out</button>

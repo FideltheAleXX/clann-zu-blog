@@ -22,9 +22,9 @@ ORDER BY p.id DESC;
   },
   createPost: async ({ title, content, author, img }) => {
     const query = `
-        INSERT INTO posts (title, content, author, img) 
-        VALUES ($1, $2, $3, $4) 
-        RETURNING *;
+        INSERT INTO posts (title, content, user_id, img) 
+VALUES ($1, $2, $3, $4) 
+RETURNING *;
     `;
 
     const values = [title, content, author, img];

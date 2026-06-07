@@ -1,8 +1,8 @@
 const API_URL = 'http://localhost:3000';
 
 function switchAuthMode(mode) {
-  const loginForm = document.querySelector('.login-form');
-  const registerForm = document.querySelector('.register-form');
+  const loginForm = document.getElementById('login-form-block');
+  const registerForm = document.getElementById('register-form-block');
 
   if (mode === 'register') {
     registerForm.classList.add('active');
@@ -27,7 +27,7 @@ window.addEventListener('hashchange', () => {
 });
 
 //LOGIN
-const loginFormElement = document.querySelector('.login-form form');
+const loginFormElement = document.querySelector('form.loggin-form');
 loginFormElement.addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -65,7 +65,7 @@ loginFormElement.addEventListener('submit', async (e) => {
 });
 
 //REGISTRATION
-const registerFormElement = document.querySelector('.register-form form');
+const registerFormElement = document.querySelector('form.register-form');
 registerFormElement.addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -90,7 +90,7 @@ registerFormElement.addEventListener('submit', async (e) => {
 
     if (response.ok) {
       alert('You`re registred! Please, log in.');
-      toggleButtons[0].click();
+      switchAuthMode('login');
       registerFormElement.reset();
     } else {
       alert(`Error: ${data.message}`);

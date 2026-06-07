@@ -8,7 +8,11 @@
   margin: 0 auto;
 }
 
-.loggin-form {
+.auth-form {
+  display: none;
+}
+
+.auth-form.active {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -19,11 +23,21 @@
   font-size: 18px;
 }
 
+.loggin-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .email-input,
 .password-input,
 .nickname-input {
   border-radius: var(--main-br);
-  border: 1px solid blue;
+  border: 1px solid var(--main-color);
   font-size: 18px;
   padding: var(--main-pd);
   margin: var(--main-mg);
@@ -31,13 +45,14 @@
 }
 
 .submit-btn {
-  border: 1px solid blue;
+  border: 1px solid var(--main-color);
   background-color: #fff;
-  color: blue;
+  color: var(--main-color);
   margin: var(--secondary-mg);
   border-radius: var(--main-br);
   padding: var(--main-pd);
   font-size: 18px;
+  font-weight: 600;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -45,11 +60,5 @@
 .submit-btn:hover {
   border: none;
   color: #fff;
-  background-color: blue;
-}
-
-.login-form.active {
-}
-
-.register-form.active {
+  background-color: var(--main-color);
 }
