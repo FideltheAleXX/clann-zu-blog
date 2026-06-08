@@ -1,5 +1,13 @@
 const API_URL = 'http://localhost:3000';
 
+document.addEventListener('DOMContentLoaded', () => {
+  const token = localStorage.getItem('token');
+
+  if (token) {
+    window.location.href = './index.html';
+  }
+});
+
 function switchAuthMode(mode) {
   const loginForm = document.getElementById('login-form-block');
   const registerForm = document.getElementById('register-form-block');
@@ -51,8 +59,7 @@ loginFormElement.addEventListener('submit', async (e) => {
     if (response.ok) {
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
-
-      window.location.href = './index.html';
+      showSuccessLogin();
     } else {
       alert(`Error: ${data.message}`);
     }
@@ -101,4 +108,17 @@ registerFormElement.addEventListener('submit', async (e) => {
   }
 
   registerFormElement.reset();
+});
+
+const loginModal = document.getElementById('login-success-modal');
+const closeModalBtn = document.getElementById('close-modal-btn');
+
+function showSuccessLogin() {
+  loginModal.showModal();
+}
+
+closeModalBtn.addEventListener('click', () => {
+  loginModal.close();
+
+  window.location.href = './index.html';
 });

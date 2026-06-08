@@ -62,3 +62,47 @@
   color: #fff;
   background-color: var(--main-color);
 }
+
+/* Modal Window */
+.modal {
+  margin: 0 auto;
+  border: none;
+  border-radius: var(--main-br);
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  background: var(--secondary-theme);
+  color: #fff;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.modal-btn {
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+  color: var(--main-color);
+  margin: var(--secondary-mg);
+  border-radius: var(--main-br);
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.modal-btn:hover {
+  border: none;
+  color: #fff;
+  background-color: var(--main-color);
+}

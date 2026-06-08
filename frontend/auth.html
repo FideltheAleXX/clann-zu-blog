@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auth Form</title>
     <link rel="icon" type="image/png" href="./favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=check"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/auth.css" />
   </head>
@@ -53,6 +57,16 @@
         </form>
       </div>
     </section>
+    <dialog id="login-success-modal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">
+          <span class="material-symbols-outlined"> check </span>
+        </div>
+        <h2>Succsesfully!</h2>
+        <p>Welcome to fan-site Clann Zú</p>
+        <button id="close-modal-btn" class="modal-btn">OK</button>
+      </div>
+    </dialog>
     <script type="module" src="./js/app.js"></script>
     <script type="module" src="./js/auth.js"></script>
     <script type="module" src="./js/navbar.js"></script>
