@@ -87,6 +87,10 @@
   margin-bottom: 15px;
 }
 
+.material-symbols-outlined {
+  font-size: 48px;
+}
+
 .modal-btn {
   border: 1px solid var(--main-color);
   background-color: #fff;
@@ -98,7 +102,89 @@
   font-weight: 600;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: background-color 0.2s;
+}
+
+/* Mobile Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  #auth-container {
+    width: 90%;
+    max-width: 400px;
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .auth-form {
+    width: 100%;
+  }
+
+  .email-input,
+  .password-input,
+  .nickname-input {
+    font-size: 16px;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .submit-btn,
+  .modal-btn {
+    padding: 0.75rem 1rem;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .success-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  #auth-container {
+    width: 95%;
+    max-width: 350px;
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  .auth-form {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .auth-title {
+    font-size: 16px;
+  }
+
+  .email-input,
+  .password-input,
+  .nickname-input {
+    font-size: 14px;
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+  }
+
+  .submit-btn,
+  .modal-btn {
+    font-size: 14px;
+    padding: 0.6rem 0.8rem;
+    transition: background-color 0.2s;
+  }
+
+  .modal {
+    width: 95%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .success-icon {
+    font-size: 2rem;
+  }
 }
 
 .modal-btn:hover {
