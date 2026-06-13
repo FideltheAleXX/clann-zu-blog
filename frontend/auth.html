@@ -11,64 +11,69 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/auth.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div>
-      <div class="hero">
-        <div class="hero-logo">
-          <a href="index.html"
-            ><img src="./images/clann-zu-logo.png" alt="clann zu"
-          /></a>
-        </div>
-        <div class="hero-title">Clann Zú fan-site</div>
+    <div class="auth-page">
+      <header>
+        <div class="hero">
+          <div class="hero-logo">
+            <a href="index.html"
+              ><img src="./images/clann-zu-logo.png" alt="clann zu"
+            /></a>
+          </div>
+          <div class="hero-title">Clann Zú fan-site</div>
 
-        <div class="hero-auth"></div>
-      </div>
-      <ul class="navbar-nav"></ul>
-    </div>
-    <section id="auth-container">
-      <div id="login-form-block" class="auth-form active">
-        <div class="auth-title">Log in to your account</div>
-        <form class="loggin-form">
-          <input
-            class="email-input"
-            placeholder="email or nickname"
-            type="text"
-          />
-          <input
-            class="password-input"
-            placeholder="password"
-            type="password"
-          />
-          <button class="submit-btn" type="submit">Log in</button>
-        </form>
-      </div>
-      <div id="register-form-block" class="auth-form">
-        <div class="auth-title">Registration</div>
-        <form class="register-form">
-          <input class="email-input" placeholder="email" type="email" />
-          <input class="nickname-input" placeholder="nickname" type="text" />
-          <input
-            class="password-input"
-            placeholder="password"
-            type="password"
-          />
-          <button class="submit-btn" type="submit">Sign Up</button>
-        </form>
-      </div>
-    </section>
-    <dialog id="login-success-modal" class="modal">
-      <div class="modal-content">
-        <div class="success-icon">
-          <span class="material-symbols-outlined"> check </span>
+          <div class="hero-auth"></div>
         </div>
-        <h2>Succsesfully!</h2>
-        <p>Welcome to fan-site Clann Zú</p>
-        <button id="close-modal-btn" class="modal-btn">OK</button>
-      </div>
-    </dialog>
+      </header>
+      <nav><ul class="navbar-nav"></ul></nav>
+      <section id="auth-container">
+        <div id="login-form-block" class="auth-form active">
+          <div class="auth-title">Log in to your account</div>
+          <form class="loggin-form">
+            <input
+              class="email-input"
+              placeholder="email or nickname"
+              type="text"
+            />
+            <input
+              class="password-input"
+              placeholder="password"
+              type="password"
+            />
+            <button class="submit-btn" type="submit">Log in</button>
+          </form>
+        </div>
+        <div id="register-form-block" class="auth-form">
+          <div class="auth-title">Registration</div>
+          <form class="register-form">
+            <input class="email-input" placeholder="email" type="email" />
+            <input class="nickname-input" placeholder="nickname" type="text" />
+            <input
+              class="password-input"
+              placeholder="password"
+              type="password"
+            />
+            <button class="submit-btn" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </section>
+      <dialog id="login-success-modal" class="modal">
+        <div class="modal-content">
+          <div class="success-icon">
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <h2>Succsesfully!</h2>
+          <p>Welcome to fan-site Clann Zú</p>
+          <button id="close-modal-btn" class="modal-btn">OK</button>
+        </div>
+      </dialog>
+      <footer id="footer"></footer>
+    </div>
     <script type="module" src="./js/app.js"></script>
     <script type="module" src="./js/auth.js"></script>
     <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/footer.js"></script>
   </body>
 </html>

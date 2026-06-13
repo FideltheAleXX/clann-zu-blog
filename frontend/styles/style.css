@@ -311,3 +311,13 @@ details[open] .track-lyrics {
     font-size: 0.75rem;
   }
 }
+
+#footer {
+  background-color: #002222;
+  color: #fff;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  padding: var(--main-pd);
+  margin-top: var(--main-mg);
+}

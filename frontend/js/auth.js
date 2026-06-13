@@ -43,29 +43,24 @@ loginFormElement.addEventListener('submit', async (e) => {
   const password = loginFormElement.querySelector('.password-input').value;
 
   try {
-    const response = await fetch(`${API_URL}/auth/login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        loginIdentifier,
-        password,
-      }),
+    const response = await axios.post(`${API_URL}/auth/login`, {
+      loginIdentifier,
+      password,
     });
 
-    const data = await response.json();
+    const data = response.data;
 
-    if (response.ok) {
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('user', JSON.stringify(data.user));
-      showSuccessLogin();
-    } else {
-      alert(`Error: ${data.message}`);
-    }
+    localStorage.setItem('token', data.token);
+    localStorage.setItem('user', JSON.stringify(data.user));
+    showSuccessLogin();
   } catch (error) {
     console.error('Login error:', error);
-    alert('Server error. Please, try again later.');
+
+    if (error.response) {
+      alert(`Error: ${error.response.data.message}`);
+    } else {
+      alert('Server error. Please, try again later.');
+    }
   }
 
   loginFormElement.reset();
@@ -81,30 +76,23 @@ registerFormElement.addEventListener('submit', async (e) => {
   const password = registerFormElement.querySelectorAll('input')[2].value;
 
   try {
-    const response = await fetch(`${API_URL}/auth/reg`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        nickname,
-        password,
-      }),
+    const response = await axios.post(`${API_URL}/auth/reg`, {
+      email,
+      nickname,
+      password,
     });
 
-    const data = await response.json();
-
-    if (response.ok) {
-      alert('You`re registred! Please, log in.');
-      switchAuthMode('login');
-      registerFormElement.reset();
-    } else {
-      alert(`Error: ${data.message}`);
-    }
+    const data = response.data;
+    alert('Registration successful! Redirecting to login...');
+    switchAuthMode('login');
   } catch (error) {
     console.error('Registration error:', error);
-    alert('Server error. Please, try again later.');
+
+    if (error.response) {
+      alert(`Error: ${error.response.data.message}`);
+    } else {
+      alert('Server error. Please, try again later.');
+    }
   }
 
   registerFormElement.reset();

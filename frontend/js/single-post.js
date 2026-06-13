@@ -11,10 +11,9 @@ async function loadSinglePost() {
   }
 
   try {
-    const response = await fetch(`${API_URL}/${postId}`);
-    if (!response.ok) throw new Error('Server: Post not found');
+    const response = await axios.get(`${API_URL}/${postId}`);
 
-    const post = await response.json();
+    const post = response.data;
 
     document.getElementById('post-title').textContent = post.title;
     document.getElementById('post-meta').textContent =

@@ -8,9 +8,9 @@ export async function loadPosts() {
     return;
   }
   try {
-    const response = await fetch(API_URL);
+    const response = await axios.get(API_URL);
 
-    const posts = await response.json();
+    const posts = response.data;
 
     container.innerHTML = '';
 

@@ -1,3 +1,9 @@
+.create-post-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .create-section {
   margin: 0 auto;
   display: grid;
@@ -6,7 +12,9 @@
   align-items: center;
   padding: 20px;
   border: 1px solid #ccc;
+  width: 100%;
   max-width: 500px;
+  flex-grow: 1;
 }
 
 .create-post__title {

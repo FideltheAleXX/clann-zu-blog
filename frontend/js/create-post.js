@@ -20,28 +20,25 @@ async function createPost(e) {
   const newPostData = { title, content, img };
 
   try {
-    const response = await fetch(API_URL, {
-      method: 'POST',
+    const response = await axios.post(API_URL, newPostData, {
       headers: {
-        'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(newPostData),
     });
 
-    if (response.ok) {
-      alert('Post published successfully!');
+    alert('Post published successfully!');
 
-      document.getElementById('add-post-form').reset();
+    document.getElementById('add-post-form').reset();
 
-      window.location.href = './posts.html';
-    } else {
-      const errorData = await response.json();
-      alert(`Error: ${errorData.message}`);
-    }
+    window.location.href = './posts.html';
   } catch (error) {
     console.error('Error when creating post:', error);
-    alert('Error connection to server.');
+
+    if (error.response) {
+      alert(`Error: ${error.response.data.message}`);
+    } else {
+      alert('Error connection to server.');
+    }
   }
 }
 

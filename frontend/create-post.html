@@ -7,46 +7,52 @@
     <link rel="icon" type="image/png" href="./favicon.png" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/create-post.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div>
-      <div class="hero">
-        <div class="hero-logo">
-          <a href="index.html"
-            ><img src="./images/clann-zu-logo.png" alt="clann zu"
-          /></a>
+    <div class="create-post-page">
+      <header>
+        <div class="hero">
+          <div class="hero-logo">
+            <a href="index.html"
+              ><img src="./images/clann-zu-logo.png" alt="clann zu"
+            /></a>
+          </div>
+          <div class="hero-title">Clann Zú fan-site</div>
+
+          <div class="hero-auth"></div>
         </div>
-        <div class="hero-title">Clann Zú fan-site</div>
-        <div class="hero-auth"></div>
-      </div>
-      <ul class="navbar-nav"></ul>
+      </header>
+      <nav><ul class="navbar-nav"></ul></nav>
+      <section class="create-section">
+        <h2 class="create-post__title">Create new post</h2>
+        <form id="add-post-form">
+          <div class="post-container">
+            <label for="post-title">Title:</label><br />
+            <input type="text" id="post-title" required />
+          </div>
+          <div class="create-post__img-block">
+            <label for="post-img">Link to image (not required):</label><br />
+            <input type="url" id="post-img" />
+          </div>
+          <div class="post-container">
+            <label for="post-content">Content:</label><br />
+            <textarea
+              class="post-area"
+              id="post-content"
+              required
+              rows="7"
+            ></textarea>
+          </div>
+          <div class="create-post__btn-block">
+            <button class="create-post__btn" type="submit">Post</button>
+          </div>
+        </form>
+      </section>
+      <footer id="footer"></footer>
     </div>
-    <section class="create-section">
-      <h2 class="create-post__title">Create new post</h2>
-      <form id="add-post-form">
-        <div class="post-container">
-          <label for="post-title">Title:</label><br />
-          <input type="text" id="post-title" required />
-        </div>
-        <div class="create-post__img-block">
-          <label for="post-img">Link to image (not required):</label><br />
-          <input type="url" id="post-img" />
-        </div>
-        <div class="post-container">
-          <label for="post-content">Content:</label><br />
-          <textarea
-            class="post-area"
-            id="post-content"
-            required
-            rows="5"
-          ></textarea>
-        </div>
-        <div class="create-post__btn-block">
-          <button class="create-post__btn" type="submit">Post</button>
-        </div>
-      </form>
-    </section>
     <script type="module" src="./js/create-post.js"></script>
     <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/footer.js"></script>
   </body>
 </html>

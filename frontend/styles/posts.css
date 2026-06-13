@@ -1,3 +1,20 @@
+.posts-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #44ebd3;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
 #posts-container {
   margin: 0 auto;
   padding: var(--seconary-pd);
@@ -5,6 +22,7 @@
   justify-content: center;
   gap: 16px;
   grid-template-columns: repeat(2, 1fr);
+  flex-grow: 1;
 }
 
 .post-card {
